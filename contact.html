@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ELG-SPIDERS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <span class="logo-icon">🕷️</span>
+        ELG-SPIDERS
+        <small>GLOBAL TECHNOLOGIES</small>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation">☰</button>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="page-hero">
+        <span class="eyebrow">LET'S CONNECT</span>
+        <h1>Contact <span>Us</span></h1>
+        <p>Have an idea or project? We'd like to hear from you.</p>
+    </section>
+
+    <section class="section contact-layout">
+
+        <div class="contact-info">
+            <h2>Let's Build Something Great</h2>
+            <p>Contact ELG-SPIDERS Global Technologies for enquiries and project discussions.</p>
+
+            <div class="contact-detail">
+                <strong>Email</strong>
+                <a href="mailto:binelgazwa@gmail.com">binelgazwa@gmail.com</a>
+            </div>
+
+            <div class="contact-detail">
+                <strong>Company</strong>
+                <span>ELG-SPIDERS Global Technologies</span>
+            </div>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option>Website Development</option>
+                <option>App Development</option>
+                <option>Graphic Design</option>
+                <option>Branding</option>
+                <option>AI Creative Services</option>
+                <option>Other Enquiry</option>
+            </select>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+
+            <button type="submit" class="btn primary">Send Enquiry</button>
+            <p class="form-note">Your email app will open with your enquiry ready to send.</p>
+        </form>
+
+    </section>
+</main>
+
+<footer class="footer">
+    <h2>ELG-SPIDERS</h2>
+    <p>GLOBAL TECHNOLOGIES</p>
+    <p>© <span class="year"></span> ELG-SPIDERS Global Technologies.</p>
+</footer>
+
+</body>
+</html>

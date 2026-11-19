@@ -3,86 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | ELG-SPIDERS</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Contact ELG-SPIDERS Global Technologies to discuss a website, app concept, brand design or other digital project.">
+    <meta name="theme-color" content="#05080e">
+    <title>Contact | ELG-SPIDERS Global Technologies</title>
+    <link rel="stylesheet" href="styles.css?v=5">
+    <link rel="stylesheet" href="page-upgrade.css?v=1">
     <script src="script.js" defer></script>
 </head>
-<body>
-
+<body class="internal-page">
 <header class="header">
-    <a href="index.html" class="logo">
-        <span class="logo-icon">🕷️</span>
-        ELG-SPIDERS
-        <small>GLOBAL TECHNOLOGIES</small>
-    </a>
-    <button class="menu-toggle" aria-label="Open navigation">☰</button>
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="products.html">Products</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html" class="active">Contact</a>
+    <a href="index.html" class="logo" aria-label="ELG-SPIDERS home"><span class="logo-main"><span class="logo-icon">✦</span> ELG-SPIDERS</span><small>GLOBAL TECHNOLOGIES</small></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="products.html">Products</a><a href="portfolio.html">Portfolio</a><a href="contact.html" class="active" aria-current="page">Contact</a>
     </nav>
 </header>
-
 <main>
-    <section class="page-hero">
-        <span class="eyebrow">LET'S CONNECT</span>
-        <h1>Contact <span>Us</span></h1>
-        <p>Have an idea or project? We'd like to hear from you.</p>
+    <section class="page-hero internal-hero">
+        <span class="eyebrow">LET'S START A CONVERSATION</span>
+        <h1>Tell us about your <span>idea.</span></h1>
+        <p>Have a question or a project in mind? Send a message and share what you are hoping to create.</p>
     </section>
-
-    <section class="section contact-layout">
-
-        <div class="contact-info">
-            <h2>Let's Build Something Great</h2>
-            <p>Contact ELG-SPIDERS Global Technologies for enquiries and project discussions.</p>
-
-            <div class="contact-detail">
-                <strong>Email</strong>
-                <a href="mailto:binelgazwa@gmail.com">binelgazwa@gmail.com</a>
-            </div>
-
-            <div class="contact-detail">
-                <strong>Company</strong>
-                <span>ELG-SPIDERS Global Technologies</span>
-            </div>
+    <section class="page-content contact-page-layout">
+        <div class="contact-intro">
+            <span class="eyebrow">CONTACT ELG-SPIDERS</span>
+            <h2>Good projects start with a clear conversation.</h2>
+            <p>Tell us what you need, what you are trying to achieve and any details that may help us understand your project.</p>
+            <div class="contact-info-card"><span class="contact-info-icon">✉</span><div><small>EMAIL</small><a href="mailto:binelgazwa@gmail.com">binelgazwa@gmail.com</a></div></div>
+            <div class="contact-info-card"><span class="contact-info-icon">◇</span><div><small>COMPANY</small><strong>ELG-SPIDERS Global Technologies</strong></div></div>
+            <div class="contact-response-note"><strong>What happens next?</strong><p>Your message will be prepared in your device's email app. Review it and press send there. The website does not store enquiries in a database.</p></div>
         </div>
-
-        <form id="contactForm" class="contact-form">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-            <label for="service">Service Needed</label>
+        <form id="contactForm" class="contact-form upgraded-contact-form">
+            <div class="form-heading"><span class="eyebrow">PROJECT ENQUIRY</span><h2>Send us a message</h2><p>Fields marked with * are required.</p></div>
+            <label for="name">Your name *</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required>
+            <label for="email">Email address *</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            <label for="service">What do you need? *</label>
             <select id="service" name="service" required>
-                <option value="">Select a service</option>
+                <option value="">Choose a service</option>
                 <option>Website Development</option>
                 <option>App Development</option>
                 <option>Graphic Design</option>
                 <option>Branding</option>
                 <option>AI Creative Services</option>
-                <option>Other Enquiry</option>
+                <option>Digital Solutions</option>
+                <option>General Enquiry</option>
             </select>
-
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
-
-            <button type="submit" class="btn primary">Send Enquiry</button>
-            <p class="form-note">Your email app will open with your enquiry ready to send.</p>
+            <label for="message">Tell us about your idea *</label>
+            <textarea id="message" name="message" rows="6" placeholder="A brief description of your project, goals and requirements..." required></textarea>
+            <button type="submit" class="btn primary">Prepare email enquiry <span aria-hidden="true">→</span></button>
+            <p class="form-note">Your default email app will open with the message ready for you to review and send.</p>
         </form>
-
     </section>
 </main>
-
-<footer class="footer">
-    <h2>ELG-SPIDERS</h2>
-    <p>GLOBAL TECHNOLOGIES</p>
-    <p>© <span class="year"></span> ELG-SPIDERS Global Technologies.</p>
-</footer>
-
+<footer class="footer"><h2>ELG-SPIDERS</h2><p>GLOBAL TECHNOLOGIES</p><p>© <span class="year"></span> ELG-SPIDERS Global Technologies.</p><p><a href="mailto:binelgazwa@gmail.com">binelgazwa@gmail.com</a></p></footer>
 </body>
 </html>
